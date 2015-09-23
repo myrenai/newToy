@@ -73,5 +73,8 @@
 	</dependencies>
 	<modules>
 		<module>newtoy-spring-jdbc</module>
+		<module>newtoy-spring-common</module>
+		<module>newtoy-spring-common-db</module>
+		<module>newtoy-spring-mybatis</module>
 	</modules>
 </project>
