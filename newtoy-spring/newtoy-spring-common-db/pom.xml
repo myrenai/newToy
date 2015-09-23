@@ -6,6 +6,7 @@
 		<artifactId>newtoy-spring</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<groupId>pe.jiyoung.newtoy</groupId>
 	<artifactId>newtoy-spring-common-db</artifactId>
 	<properties>
         <!-- 10. Hibernate / JPA -->
