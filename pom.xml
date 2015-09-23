@@ -63,6 +63,7 @@
         </plugins>
     </build>
 	<modules>
-		<module>newtoy-spring-common</module>
+		
+		<module>newtoy-spring</module>
 	</modules>
 </project>
