@@ -71,4 +71,7 @@
 		</dependency>
 
 	</dependencies>
+	<modules>
+		<module>newtoy-spring-jdbc</module>
+	</modules>
 </project>

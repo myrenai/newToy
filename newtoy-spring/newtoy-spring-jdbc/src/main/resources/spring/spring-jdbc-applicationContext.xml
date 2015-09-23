@@ -13,17 +13,9 @@
         http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd">
         
-        
-    <context:property-placeholder location="classpath*:properties/newToyConf.properties" />    
-    <bean id="appProperties-common" class="pe.jiyoung.newtoy.spring.common.util.ToyPropertyResolver">
-        <property name="locations">
-            <list>
-                <value>${newToy.externalConfHome}/dbconf.properties</value>
-                <value>${newToy.externalConfHome}/idNpw.properties</value>
-            </list>
-        </property>
-    </bean>
+    <import resource="classpath*:spring/spring-common-db-applicationContext.xml"/>
     
-    <context:component-scan base-package="pe.jiyoung.newtoy.spring.common.db" />
+    <context:component-scan base-package="pe.jiyoung.newtoy.spring.jdbc" />
     <context:annotation-config />
+    <tx:annotation-driven transaction-manager="transactionManager"/>
 </beans>
