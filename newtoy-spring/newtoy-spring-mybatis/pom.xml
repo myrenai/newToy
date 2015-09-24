@@ -6,6 +6,7 @@
 		<artifactId>newtoy-spring</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<groupId>pe.jiyoung.newtoy</groupId>
 	<artifactId>newtoy-spring-mybatis</artifactId>
 	<properties>
 		<mybatis.version>3.2.7</mybatis.version>
