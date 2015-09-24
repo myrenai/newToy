@@ -9,13 +9,14 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.transaction.TransactionConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
 import pe.jiyoung.newtoy.spring.mybatis.dao.UserDao;
 import pe.jiyoung.toy.spring.mybatis.SpringMybatisTestBase;
 
-//@TransactionConfiguration(transactionManager="transactionManager", defaultRollback=true)
+@TransactionConfiguration(transactionManager="transactionManager", defaultRollback=true)
 public class UserDaoTest extends SpringMybatisTestBase{
     private static final Logger LOGGER = LoggerFactory.getLogger(UserDaoTest.class);
     @Autowired
@@ -37,7 +38,7 @@ public class UserDaoTest extends SpringMybatisTestBase{
     @Test
     @Transactional
     public void create() throws Exception {
-        final int userIndex = 6;
+        final int userIndex = 7;
         final Map<String, Object> user = this.buildUser(userIndex);
         this.userDao.create(user);
         final Map<String, Object> user2 = this.userDao.findById("userId"+userIndex);

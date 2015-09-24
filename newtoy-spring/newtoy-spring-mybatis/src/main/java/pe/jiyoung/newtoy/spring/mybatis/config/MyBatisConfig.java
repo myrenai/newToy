@@ -6,6 +6,7 @@ import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
 import pe.jiyoung.newtoy.spring.common.db.conf.BaseDatabaseConfig;
 import pe.jiyoung.newtoy.spring.common.util.ToyPropertyResolver;
@@ -38,6 +39,11 @@ public class MyBatisConfig extends BaseDatabaseConfig{
     @Bean
     public SqlSessionTemplate sqlSessionTemplate(final ApplicationContext applicationContext) throws Exception{
         return new SqlSessionTemplate(this.sqlSessionFactory(applicationContext));
+    }
+
+    @Bean
+    public DataSourceTransactionManager  transactionManager() {
+        return new DataSourceTransactionManager(this.dataSource());
     }
 
 
