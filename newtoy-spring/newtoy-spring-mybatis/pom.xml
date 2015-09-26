@@ -16,11 +16,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>pe.jiyoung.newtoy</groupId>
-			<artifactId>newtoy-spring-common</artifactId>
-			<version>${project.parent.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>pe.jiyoung.newtoy</groupId>
 			<artifactId>newtoy-spring-common-db</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>

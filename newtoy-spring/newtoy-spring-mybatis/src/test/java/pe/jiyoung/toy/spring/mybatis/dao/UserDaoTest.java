@@ -57,7 +57,6 @@ public class UserDaoTest extends SpringMybatisTestBase{
         Assert.isTrue(user.get("name").equals(user2.get("name")));
     }
 
-
     private Map<String, Object> buildUser(final int index) {
         final Map<String, Object> user = new HashMap<String, Object>();
         user.put("userId", "userId" + index);
