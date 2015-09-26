@@ -12,7 +12,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import pe.jiyoung.newtoy.spring.common.util.ToyPropertyResolver;
 
-@ContextConfiguration(locations = { "classpath:spring/spring-mybatis-applicationContext.xml" })
+@ContextConfiguration(locations = { "classpath:spring/test-spring-mybatis-applicationContext.xml" })
 @RunWith(SpringJUnit4ClassRunner.class)
 public class SpringMybatisTestBase {
 

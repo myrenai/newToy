@@ -12,7 +12,7 @@
 	</insert>
 	
 	<insert id="updateUser" >
-        update users set password = #{password}, name = #{name}, email = #{name} where userId = #{userId}
+        update users set password = #{password}, name = #{name}, email = #{email} where userId = #{userId}
     </insert>
 
 </mapper>
