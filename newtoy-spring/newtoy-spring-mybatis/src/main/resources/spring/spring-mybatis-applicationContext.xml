@@ -16,11 +16,11 @@
     <import resource="classpath*:spring/spring-common-db-applicationContext.xml"/>
     
     <bean class="pe.jiyoung.newtoy.spring.common.util.ToyPropertyResolver">
-        <property name="externalConfRoot" value="file:/media/jiyoung/Ubuntu/GIT/newToy/externalConfHome"></property>
-        <property name="ignoreUnresolvablePlaceholders" value="false"/>
         <property name="locations">
             <list>
-                <value>mybatis.properties</value>
+                <value>${newToy.externalConfHome}/dbconf.properties</value>
+                <value>${newToy.externalConfHome}/idNpw.properties</value>
+                <value>${newToy.externalConfHome}/mybatis.properties</value>
             </list>
         </property>
     </bean>

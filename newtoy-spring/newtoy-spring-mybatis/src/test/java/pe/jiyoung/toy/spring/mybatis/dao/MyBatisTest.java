@@ -10,10 +10,10 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import junit.framework.Assert;
 
 public class MyBatisTest {
 
@@ -31,6 +31,7 @@ public class MyBatisTest {
         final SqlSession session = this.sqlSessionFactory.openSession();
         try {
             final Map<String, Object> user = session.selectOne("userMapper.findUserById", "myrenai");
+            Assert.assertNotNull(user);
         } finally {
             session.close();
         }
