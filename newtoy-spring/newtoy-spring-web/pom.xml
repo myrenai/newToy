@@ -119,8 +119,9 @@
 	
 	</dependencies>
 	<modules>
-		<module>newtoy-spring-mvc</module>
+		<module>newtoy-spring-jsp</module>
 		<module>newtoy-spring-mvc-freemarker</module>
 		<module>newtoy-springmvc-webjars</module>
+		<module>newtoy-springmvc-portlet</module>
 	</modules>
 </project>
