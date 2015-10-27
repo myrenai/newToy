@@ -3,24 +3,22 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>pe.jiyoung.newtoy</groupId>
-		<artifactId>newtoy-springmvc</artifactId>
+		<artifactId>newtoy-springmvc-webjars</artifactId>
 		<version>1.0.0</version>
 	</parent>
-	<artifactId>newtoy-springmvc-jsp</artifactId>
+	<artifactId>newtoy-springmvc-angularjs</artifactId>
 	<packaging>war</packaging>
-	<properties>
-		<tomcat.servlet.version>7.0.47</tomcat.servlet.version>
-		<json.simple.version>1.1.1</json.simple.version>
-		<jackson.version>1.9.13</jackson.version>
-	</properties>
 
 	<dependencies>
-
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>2.3.20</version>
+		</dependency>
 		<dependency>
 			<groupId>pe.jiyoung.newtoy</groupId>
 			<artifactId>newtoy-spring-mybatis</artifactId>
 			<version>${project.parent.version}</version>
 		</dependency>
-
 	</dependencies>
 </project>

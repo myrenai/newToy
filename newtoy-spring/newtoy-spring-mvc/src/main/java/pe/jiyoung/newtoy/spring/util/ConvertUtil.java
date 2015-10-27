@@ -2,7 +2,7 @@ package pe.jiyoung.newtoy.spring.util;
 
 import java.util.Map;
 
-import org.codehaus.jackson.map.ObjectMapper;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 import pe.jiyoung.newtoy.spring.mvc.domain.User;
 
