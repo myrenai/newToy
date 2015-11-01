@@ -123,5 +123,6 @@
 		<module>newtoy-spring-mvc-freemarker</module>
 		<module>newtoy-springmvc-webjars</module>
 		<module>newtoy-springmvc-portlet</module>
+		<module>newtoy-springmvc-dojo</module>
 	</modules>
 </project>

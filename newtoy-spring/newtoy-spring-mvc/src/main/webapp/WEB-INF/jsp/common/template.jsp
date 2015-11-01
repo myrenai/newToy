@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <title>TOY Project</title>
-<%@ include file="common/_header.jsp" %>
+<%@ include file="_header.jsp" %>
 </head>
 <body>
-    <%@ include file="common/_top.jsp" %>
+    <%@ include file="_top.jsp" %>
     <!-- Page Content -->
     <div class="container">
         <div class="row">
@@ -16,6 +16,6 @@
         <!-- /.row -->
     </div>
     <!-- /.container -->
-    <%@ include file="common/_footer.jsp" %>
+    <%@ include file="_footer.jsp" %>
 </body>
 </html>
